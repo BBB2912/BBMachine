@@ -14,7 +14,7 @@ def show_yolo_services():
 
 
     imgclassification_filepath=os.path.join(current_dir,"Services/ImageClassification.py")
-    segmentation_filepath=os.path.join(current_dir,"Services/imageSegmentation.py")
+    segmentation_filepath=os.path.join(current_dir,"Services/ImageSegmentation.py")
     objdeection_filepath=os.path.join(current_dir,"Services/ObjectDetection.py")
     KeyPointsDetection_filepath=os.path.join(current_dir,"Services/KeyPointsDetection.py")
 
