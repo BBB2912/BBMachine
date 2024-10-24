@@ -1,0 +1,4 @@
+opencv-headless-python,
+numpy,
+streamlit,
+streamlit_option_menu
