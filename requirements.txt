@@ -1,4 +1,4 @@
-opencv-headless-python,
+opencv-python-headless,
 numpy,
 streamlit,
 streamlit_option_menu
