@@ -23,7 +23,7 @@ def show_yolo_services():
         selected = option_menu(
             menu_title="YOLO Services",  # Required
             options=["Yolo Services","Image Classification", "Object Detection", "Image Segmentation", "Keypoints Detection"],  # Options for services
-            icons=["image", "bounding-box", "scissors", "pin-map"],  # Add icons related to each option
+            icons=["","image", "bounding-box", "scissors", "pin-map"],  # Add icons related to each option
             menu_icon="menu",  # The icon for the sidebar
             default_index=0,  # Index of the initially selected option
             orientation="vertical",  # Sidebar orientation
