@@ -18,9 +18,9 @@ selected = option_menu(
     menu_title="Image Classification Steps",  # Required
     options=["Introduction", "Data Collection & Preparation", "Model Defining", "Training", "Testing"],  # Steps
     icons=["book", "database", "brain", "play", "check-circle"],  # Icons for each step
-    menu_icon="list",  # Sidebar icon
+    menu_icon="menu",  # Sidebar icon
     default_index=0,  # Initially selected option
-    orientation="vertical",  # Sidebar vertical orientation
+    orientation="horizonta;",  # Sidebar vertical orientation
 )
 # Introduction Step
 if selected == "Introduction":
