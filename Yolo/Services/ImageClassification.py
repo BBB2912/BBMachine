@@ -14,16 +14,14 @@ current_dir = os.path.dirname(__file__)
 
 Classification_img_path = os.path.join(current_dir, "media/images/onboarding-classification-v2.png")
 # Sidebar navigation menu for steps in Image Classification
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Image Classification Steps",  # Required
-        options=["Introduction", "Data Collection & Preparation", "Model Defining", "Training", "Testing"],  # Steps
-        icons=["book", "database", "brain", "play", "check-circle"],  # Icons for each step
-        menu_icon="list",  # Sidebar icon
-        default_index=0,  # Initially selected option
-        orientation="vertical",  # Sidebar vertical orientation
-    )
-
+selected = option_menu(
+    menu_title="Image Classification Steps",  # Required
+    options=["Introduction", "Data Collection & Preparation", "Model Defining", "Training", "Testing"],  # Steps
+    icons=["book", "database", "brain", "play", "check-circle"],  # Icons for each step
+    menu_icon="list",  # Sidebar icon
+    default_index=0,  # Initially selected option
+    orientation="vertical",  # Sidebar vertical orientation
+)
 # Introduction Step
 if selected == "Introduction":
     st.title("Introduction to Image Classification")
