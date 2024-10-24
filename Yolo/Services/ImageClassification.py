@@ -20,7 +20,7 @@ selected = option_menu(
     icons=["book", "database", "brain", "play", "check-circle"],  # Icons for each step
     menu_icon="menu",  # Sidebar icon
     default_index=0,  # Initially selected option
-    orientation="horizonta;",  # Sidebar vertical orientation
+    orientation="horizontal",  # Sidebar vertical orientation
 )
 # Introduction Step
 if selected == "Introduction":
