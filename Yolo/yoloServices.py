@@ -12,6 +12,12 @@ def show_yolo_services():
     objdetection_img_path = os.path.join(current_dir, "media/images/onboarding-objdet.png")
     KeypointsDetection_img_path = os.path.join(current_dir, "media/images/onboarding-key.png")
 
+
+    imgclassification_filepath=os.path.join(current_dir,"Services/ImageClassification.py")
+    segmentation_filepath=os.path.join(current_dir,"Services/imageSegmentation.py")
+    objdeection_filepath=os.path.join(current_dir,"Services/ObjectDetection.py")
+    KeyPointsDetection_filepath=os.path.join(current_dir,"Services/KeyPointsDetection.py")
+
     # Sidebar navigation menu using option_menu
     with st.sidebar:  # This ensures the menu is placed on the left sidebar
         selected = option_menu(
@@ -66,16 +72,16 @@ def show_yolo_services():
     # Display images related to each service
     
     elif selected == "Image Classification":
-        exec(open(r'C:\Users\MAHIREDDY\Desktop\BBMachine\Yolo\Services\ImageClassification.py').read())  # Run the Image Classification script
+        exec(open(imgclassification_filepath).read())  # Run the Image Classification script
 
     elif selected == "Object Detection":
-        exec(open(r'C:\Users\MAHIREDDY\Desktop\BBMachine\Yolo\Services\ObjectDetection.py').read())  # Run the Object Detection script
+        exec(open(objdeection_filepath).read())  # Run the Object Detection script
 
     elif selected == "Image Segmentation":
-        exec(open(r'C:\Users\MAHIREDDY\Desktop\BBMachine\Yolo\Services\ImageSegmentation.py').read())  # Run the Image Segmentation script
+        exec(open(segmentation_filepath).read())  # Run the Image Segmentation script
 
     elif selected == "Keypoints Detection":
-        exec(open(r'C:\Users\MAHIREDDY\Desktop\BBMachine\Yolo\Services\KeyPointsDetection.py').read())  # Run the Keypoints Detection script
+        exec(open(KeyPointsDetection_filepath).read())  # Run the Keypoints Detection script
 
 # Main entry point
 if __name__ == "__main__":
